@@ -5,12 +5,12 @@ while True:
 		while True:
 			_name = input("Enter " + _str + " Name : ")
 			if (_name == ""):
-				print("Enter Proper Requrements...!!!")
+				print("Enter Proper Requirements...!!!")
 				continue
 			else:
 				try:
 					_name != int(_name)
-					print("Enter Proper Requrements...!!!")
+					print("Enter Proper Requirements...!!!")
 					continue
 				except Exception as e:
 					return _name
