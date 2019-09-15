@@ -29,12 +29,6 @@ while True:
 					aa = '/'
 					_dob2 = _dob.split(aa)
 					if (len(_dob2[0]) == 2 and len(_dob2[1]) == 2 and len(_dob2[2]) == 4):
-						# if (int(_dob2[0])<31):
-						# 	continue
-						# elif(int(_dob2[1])<12):
-						# 	continue
-						# else:
-						# 	print("Enter Correct Date of Birth...!!!")
 						try:
 							dd_num=int(_dob2[0])
 							dd_num1=int(_dob2[1])
@@ -49,13 +43,6 @@ while True:
 					aa = '.'
 					_dob2 = _dob.split(aa)
 					if (len(_dob2[0]) == 2 and len(_dob2[1]) == 2 and len(_dob2[2]) == 4):
-						# if (int(_dob2[0])<31):
-						# 	continue
-						# elif(int(_dob2[1])<12):
-						# 	continue
-						# else:
-						# 	print("Enter Correct Date of Birth...!!!")
-						# 	continue
 						try:
 							dd_num=int(_dob2[0])
 							dd_num1=int(_dob2[1])
@@ -70,12 +57,6 @@ while True:
 					aa = '-'
 					_dob2 = _dob.split(aa)
 					if (len(_dob2[0]) == 2 and len(_dob2[1]) == 2 and len(_dob2[2]) == 4):
-						# if (int(_dob2[0])<31):
-						# 	continue
-						# elif(int(_dob2[1])<12):
-						# 	continue
-						# else:
-						# 	print("Enter Correct Date of Birth...!!!")
 						try:
 							dd_num=int(_dob2[0])
 							dd_num1=int(_dob2[1])
