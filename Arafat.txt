@@ -1,0 +1,1 @@
+{'name': 'Arafat', 'fname': 'Hanif', 'mname': 'Rehana', 'mob': 1722558110, 'dob': '02/09/1994', 'univrstyname': 'Daffodil international university', 'subjctname': 'Cse'}
