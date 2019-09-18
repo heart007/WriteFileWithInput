@@ -1,23 +1,31 @@
 import datetime
+import re
 import numpy as np
 while True:
 	def name(_str):
 		while True:
-			_name = input("Enter " + _str + " Name : ")
-			if (_name == ""):
+			string=input("Enter " + _str + " Name : ")
+			nameee=string
+			if (string == ""):
 				print("Enter Proper Requirements...!!!")
 				continue
 			else:
 				try:
-					_name != int(_name)
+					string != int(string)
 					print("Enter Proper Requirements...!!!")
 					continue
 				except Exception as e:
-					return _name
-					break
-	_yName = name("Your").capitalize()
-	_fName = name("Father").capitalize()
-	_mName = name("Mother").capitalize()
+					def rexeg(nam):
+						try:
+							match = re.search(r"([\W+])",nam) #cant solve tha space problem.
+							if match:
+								return string
+						except Exception as e:
+							print("Enter Name in proper formate. i.e:(A-Za-z) ")
+					nam=rexeg(nameee)
+	_yName = name("Your")
+	_fName = name("Father")
+	_mName = name("Mother")
 	def dateofbirth():
 		while True:
 			_dob = input("Enter Your Date Of Birth. e.g(dd/mm/yyyy) : ")
@@ -82,8 +90,8 @@ while True:
 				print("Input Correct Mobile Number...!!!")
 				continue
 	mob = mob()
-	_uName = name("University").capitalize()
-	_sName = name("Subject").capitalize()
+	_uName = name("University")
+	_sName = name("Subject")
 	files = {"name": _yName, "fname": _fName, "mname": _mName, "mob": mob, "dob": dob, "univrstyname": _uName, "subjctname": _sName}
 	file = open(str(_yName) + '.txt', 'w')
 	file.write(str(files))
